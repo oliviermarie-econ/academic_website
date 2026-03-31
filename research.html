@@ -28,7 +28,7 @@
     font-size: 14.5px;
     line-height: 1.7;
     color: #2d3748;
-    background: var(--light);
+    background: #ffffff;
     padding: 40px 20px 80px;
   }
 
@@ -62,7 +62,7 @@
   .paper {
     margin-bottom: 28px;
     padding: 18px 20px 16px;
-    background: white;
+    background: #ffffff;
     border: 1px solid var(--border);
     border-left: 4px solid var(--border);
     border-radius: 2px;
@@ -200,17 +200,54 @@
     transition: background .15s, border-color .15s;
   }
   .pill:hover { background: var(--navy); color: white; border-color: var(--navy); }
+
+  /* ── COLLAPSIBLE SECTIONS ── */
+  .section-toggle {
+    width: 100%;
+    background: #1a1a1a;
+    color: white;
+    border: none;
+    text-align: left;
+    padding: 12px 18px;
+    margin: 20px 0 0;
+    cursor: pointer;
+    font-family: 'EB Garamond', serif;
+    font-size: 1.15rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 2px;
+    transition: background .15s;
+  }
+  .section-toggle:hover { background: #333; }
+  .section-toggle .arrow {
+    font-size: 0.9rem;
+    transition: transform .25s;
+  }
+  .section-toggle.open .arrow { transform: rotate(90deg); }
+
+  .section-body {
+    display: none;
+    padding-top: 16px;
+  }
+  .section-body.open { display: block; }
 </style>
 </head>
 <body>
 <div class="page">
 
-<h1>Research</h1>
+<p style="font-size:16px; color:#2d3748; margin-bottom:32px; line-height:1.75;">
+<strong>Research output</strong> is organised by <strong>stage of publication</strong> — work in progress, working papers, and accepted &amp; published papers. Where relevant, entries include indicators of <strong>media coverage and broader reach</strong> (press articles, radio, policy engagement, columns, podcast episodes).
+</p>
 
 <!-- ═══════════════════════════════════════════════
      WORK IN PROGRESS
 ════════════════════════════════════════════════ -->
-<h2>Work in Progress</h2>
+<button class="section-toggle" onclick="toggleSection(this)">Work in Progress <span class="arrow">▸</span></button>
+<div class="section-body">
 
 <div class="paper working">
   <div class="paper-title">The Mental Health Costs of Cheap Data: Evidence from Around the World
@@ -280,10 +317,13 @@
 </div>
 
 
+</div><!-- end WIP section-body -->
+
 <!-- ═══════════════════════════════════════════════
      WORKING PAPERS
 ════════════════════════════════════════════════ -->
-<h2>Working Papers</h2>
+<button class="section-toggle open" onclick="toggleSection(this)">Working Papers <span class="arrow">▸</span></button>
+<div class="section-body open">
 
 <div class="paper working">
   <div class="paper-title">
@@ -387,10 +427,13 @@
 </div>
 
 
+</div><!-- end Working Papers section-body -->
+
 <!-- ═══════════════════════════════════════════════
      ACCEPTED & PUBLISHED PAPERS
 ════════════════════════════════════════════════ -->
-<h2>Accepted &amp; Published Papers</h2>
+<button class="section-toggle open" onclick="toggleSection(this)">Accepted &amp; Published Papers <span class="arrow">▸</span></button>
+<div class="section-body open">
 
 <div class="paper published">
   <div class="paper-title">
@@ -423,19 +466,22 @@
   </div>
 </div>
 
-<div class="paper forthcoming">
+<div class="paper published">
   <div class="paper-title">
-    <a href="https://drive.google.com/file/d/1h0IxCMcqkIrzAl7spvEbeXIo75yNy71Q/view">The Unequal Job Security Scars of Displacement</a>
-    <span class="badge forthcoming">Forthcoming</span>
+    <a href="https://www.sciencedirect.com/science/article/pii/S0047272725002610">The Unequal Job Security Scars of Displacement</a>
+    <span class="badge published">Published</span>
   </div>
   <div class="paper-venue">
-    <em>Journal of Public Economics</em> (forthcoming) &nbsp;|&nbsp;
-    <span class="coauthors">with <a href="https://sites.google.com/site/anafigueiredovds/home">Anna Figueiredo</a> and <a href="http://www.markiewiczagnieszka.com/">Agnieszka Markiewicz</a></span>
+    <em>Journal of Public Economics</em>, 2026, 255, 105562 &nbsp;|&nbsp;
+    <span class="coauthors">with <a href="https://sites.google.com/site/anafigueiredovds/home">Ana Figueiredo</a> and <a href="http://www.markiewiczagnieszka.com/">Agnieszka Markiewicz</a></span>
   </div>
-  <p class="paper-summary">Displaced workers suffer persistent job-security and earnings losses, but access to a lump-sum cash transfer significantly offsets these — especially for low-wealth workers facing credit constraints.</p>
+  <p class="paper-summary">Displaced workers suffer persistent job-security and earnings losses — but access to a lump-sum cash transfer significantly offsets these, especially for liquidity-constrained workers, highlighting job security as a key channel through which cash-on-hand reduces the long-run costs of job loss.</p>
   <button class="abstract-toggle" onclick="toggleAbstract(this)">Abstract</button>
   <div class="abstract-body">
-    We investigate how liquid wealth affects job security after displacement, leveraging a Dutch policy that makes only some workers eligible for a lump-sum transfer. Our findings show that displaced workers experience sizable and persistent losses in job security, with important negative effects on their earnings. However, eligibility for the lump-sum transfer significantly offsets these losses. This positive impact is more pronounced among workers with low liquid wealth at the time of displacement, consistent with credit constraints. We conclude that cash-on-hand post-displacement can attenuate the wage cost of job loss, especially for the poor.
+    Segmented labor markets, where stable jobs coexist with insecure, high-turnover positions, make job security key to workers' long-term outcomes. Using Dutch administrative data, we study the impact of displacement on job security and the role of cash-on-hand. One year after displacement, permanent employment falls by about one-fifth and remains lower five years later, amplifying wage losses: displaced workers who lose job security experience losses 21% larger than those retaining a permanent contract. Exploiting a policy granting lump-sum transfers only to some displaced workers, we find that eligibility attenuates job security losses and, as a result, wage losses. Effects are larger among liquidity-constrained workers, consistent with binding liquidity constraints.
+  </div>
+  <div class="paper-links">
+    <a class="pill" href="https://www.sciencedirect.com/science/article/pii/S0047272725002610">Published version</a>
   </div>
 </div>
 
@@ -666,10 +712,13 @@
 </div>
 
 
+</div><!-- end Published section-body -->
+
 <!-- ═══════════════════════════════════════════════
      BOOK CHAPTERS & OTHER
 ════════════════════════════════════════════════ -->
-<h2>Book Chapters &amp; Other</h2>
+<button class="section-toggle" onclick="toggleSection(this)">Book Chapters &amp; Other <span class="arrow">▸</span></button>
+<div class="section-body">
 
 <div class="paper published">
   <div class="paper-title">
@@ -711,10 +760,17 @@
   </div>
 </div>
 
+</div><!-- end Book Chapters section-body -->
+
 </div><!-- .page -->
 
 <script>
 function toggleAbstract(btn) {
+  btn.classList.toggle('open');
+  const body = btn.nextElementSibling;
+  body.classList.toggle('open');
+}
+function toggleSection(btn) {
   btn.classList.toggle('open');
   const body = btn.nextElementSibling;
   body.classList.toggle('open');
