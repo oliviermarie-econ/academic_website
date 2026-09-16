@@ -40,10 +40,20 @@ and <a href="https://www.maxkapustin.com/" target="_blank">Max Kapustin</a> as l
   <a class="btn" href="files/TWEC_2026_Cornell_program.pdf" target="_blank">Programme (PDF)</a>
 </p>
 
+<div id="pdf-holder">
 <object class="pdf-frame" data="files/TWEC_2026_Cornell_program.pdf#view=FitH" type="application/pdf" style="height:900px">
   <p>Your browser cannot display the PDF inline.
   <a href="files/TWEC_2026_Cornell_program.pdf" target="_blank">Open the programme in a new tab</a>.</p>
 </object>
+</div>
+<script>
+// Inside a sandboxed iframe (Google Sites) the native PDF viewer is blocked, so use the Google Docs viewer instead.
+if (window.self !== window.top) {
+  var pdf = 'https://oliviermarie-econ.github.io/academic_website/files/TWEC_2026_Cornell_program.pdf';
+  document.getElementById('pdf-holder').innerHTML =
+    '<iframe class="pdf-frame" style="height:900px" src="https://docs.google.com/viewer?url=' + encodeURIComponent(pdf) + '&embedded=true" title="TWEC programme"></iframe>';
+}
+</script>
 
 <h2 class="plain">Past editions</h2>
 
