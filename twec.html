@@ -48,10 +48,9 @@ and <a href="https://www.maxkapustin.com/" target="_blank">Max Kapustin</a> as l
 </div>
 <script>
 // Inside a sandboxed iframe (Google Sites) the native PDF viewer is blocked, so use the Google Docs viewer instead.
+// When embedded (Google Sites) the page height is fixed, so skip the inline viewer: the button above opens the PDF.
 if (window.self !== window.top) {
-  var pdf = 'https://oliviermarie-econ.github.io/academic_website/files/TWEC_2026_Cornell_program.pdf';
-  document.getElementById('pdf-holder').innerHTML =
-    '<iframe class="pdf-frame" style="height:700px" src="https://docs.google.com/viewer?url=' + encodeURIComponent(pdf) + '&embedded=true" title="TWEC programme"></iframe>';
+  document.getElementById('pdf-holder').innerHTML = '';
 }
 </script>
 
