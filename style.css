@@ -349,3 +349,14 @@ h2.plain {
 /* contact block */
 .contact-block { line-height: 1.9; font-size: 15px; }
 .map-frame { width: 100%; height: 340px; border: 1px solid var(--border); border-radius: 2px; margin-top: 24px; }
+
+/* portrait on the home page */
+.portrait {
+  float: right;
+  width: 150px;
+  height: auto;
+  margin: 6px 0 16px 24px;
+  border-radius: 3px;
+  border: 1px solid var(--border);
+}
+@media (max-width: 520px) { .portrait { float: none; display: block; margin: 0 0 16px; } }
