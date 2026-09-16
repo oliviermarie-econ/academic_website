@@ -1,0 +1,270 @@
+% ============================================================
+%  Olivier Marie — Curriculum Vitae
+%  Compile with pdflatex (twice). See build_cv.sh in this folder.
+%  Output is copied to ../files/CV_Olivier_Marie.pdf for the website.
+% ============================================================
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{mathpazo}
+\usepackage[margin=2.2cm,top=2cm,bottom=2.2cm]{geometry}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{microtype}
+\PassOptionsToPackage{hyphens}{url}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{colorlinks=true, urlcolor=navy, linkcolor=navy}
+\urlstyle{same}
+\renewcommand{\UrlBreaks}{\do\/\do\-\do\.\do\_\do\?\do\=\do\&}
+\setlength{\emergencystretch}{2em}
+
+\definecolor{navy}{HTML}{1A2744}
+\definecolor{mid}{HTML}{4A5568}
+
+% ---- date of this version (update when you rebuild) ----
+\newcommand{\cvdate}{September 2026}
+
+% ---- section look ----
+\titleformat{\section}{\large\bfseries\color{navy}}{}{0pt}{}[\vspace{-6pt}\color{navy}\rule{\textwidth}{0.6pt}]
+\titlespacing*{\section}{0pt}{14pt}{8pt}
+\titleformat{\subsection}{\normalsize\bfseries\color{navy}}{}{0pt}{}
+\titlespacing*{\subsection}{0pt}{10pt}{4pt}
+
+% ---- dated entries: \item[2024 --] text ----
+\newlist{datelist}{description}{1}
+\setlist[datelist]{leftmargin=2.9cm, labelwidth=2.7cm, labelsep=0.2cm, align=left,
+  font=\normalfont\small\color{mid}, itemsep=4pt, parsep=0pt, topsep=2pt}
+
+% ---- publication lists ----
+\newlist{pubs}{itemize}{1}
+\setlist[pubs]{leftmargin=1.2em, label=\textbullet, itemsep=5pt, parsep=0pt, topsep=2pt}
+
+% ---- header / footer ----
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[L]{\small\color{mid}Olivier Marie --- Curriculum Vitae --- \cvdate}
+\fancyfoot[R]{\small\color{mid}\thepage\ / \pageref{LastPage}}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4pt}
+
+\begin{document}
+
+% ============================================================
+%  HEADER
+% ============================================================
+{\LARGE\bfseries\color{navy} OLIVIER MARIE}\hfill{\small\color{mid}\cvdate}\\[2pt]
+{\large Curriculum Vitae}\hfill{\small\href{https://sites.google.com/site/oliviermarie/}{sites.google.com/site/oliviermarie}}
+
+\vspace{8pt}
+\begin{minipage}[t]{0.55\textwidth}
+Department of Economics\\
+Erasmus School of Economics\\
+Burgemeester Oudlaan 50\\
+3062 PA Rotterdam, The Netherlands
+\end{minipage}%
+\begin{minipage}[t]{0.45\textwidth}
+Tel: +31 (0)10 40 81393\\
+Email: \href{mailto:marie@ese.eur.nl}{marie@ese.eur.nl}
+\end{minipage}
+
+% ============================================================
+\section{Research Interests}
+Labour economics; economics of crime; economics of education; applied micro-econometrics; behavioural economics; policy evaluation.
+
+% ============================================================
+\section{Education, Further Training, and Language Skills}
+
+\subsection{Education}
+\begin{datelist}
+  \item[2005 -- 2010] PhD in Economics, Royal Holloway, University of London.\\ Thesis: ``Essays on the Economics of Crime''
+  \item[2000 -- 2001] MSc Economics and Economic History, London School of Economics
+  \item[1998 -- 2000] BA (Hons) Economics and Economic History, University of Liverpool
+  \item[1995 -- 1998] DEUG Economics and English, University of Nanterre, Paris X
+\end{datelist}
+
+\subsection{Further Training}
+\begin{datelist}
+  \item[2015 -- 2016] Fast Forward Academic Leadership Development Programme, Maastricht University
+  \item[2014 -- 2015] UTQ: University Teaching Qualification (BKO: Basis Kwalificatie Onderwijs)
+\end{datelist}
+
+\subsection{Language Skills}
+French (native speaker), English (fluent), Portuguese (proficient), Spanish (intermediate), and Dutch (basic).
+
+% ============================================================
+\section{Employment and Research Activities}
+
+\begin{datelist}
+  \item[2024 --] Research Director of the Health, Labour and Inequalities Group (HELIq), coordinating over 35 researchers across 2 departments of the Erasmus School of Economics, Rotterdam, NL
+  \item[2017 --] Professor of Labour Economics -- Department of Economics, Erasmus School of Economics (ESE), Rotterdam, NL
+  \item[2017 --] Research Affiliate -- Labour Economics Programme, Centre for Economic Policy Research (CEPR), London, UK
+  \item[2016 --] Research Fellow -- Labour, Health, Education \& Development Group, Tinbergen Institute (TI), Amsterdam and Rotterdam, NL
+  \item[2014 --] Research Fellow -- Institute for the Study of Labor (IZA), Bonn, DE
+  \item[2013 --] Network Affiliate -- Ifo Institute and Center for Economic Studies, CESifo Group Munich, DE
+  \item[2017 -- 2023] Professor of Applied Labour Economics and PhD Coordinator -- ROA and Department of Economics, Maastricht University, NL
+  \item[2016 -- 2017] Associate Professor (0.8 fte) -- Department of Economics, Erasmus School of Economics (ESE), Erasmus University Rotterdam, NL
+  \item[2016 -- 2017] Senior Researcher (0.2 fte) -- Research Centre for Education and the Labour Market (ROA), Maastricht University, NL
+  \item[2012 -- 2016] Assistant Professor -- Department of Economics (AE2), School of Business and Economics, Maastricht University, NL
+  \item[2009 -- 2012] Marie Curie Post-Doctoral Fellow -- Research Centre for Education and the Labour Market (ROA), Maastricht University, NL
+  \item[2009 -- 2011] Appointed Member of Advisory Panel -- Economic Resources and Analysis Group, Home Office, UK
+  \item[2004 -- 2009] Research Assistant -- Education Programme, Centre for Economic Performance, London School of Economics, UK
+  \item[2002 -- 2004] Macroeconomic Consultant -- Consensus Economics, London, UK
+\end{datelist}
+
+% ============================================================
+\section{Grants and Prizes}
+
+\begin{datelist}
+  \item[2024 -- 2026] PIRALAD: Interministerial Program of Applied Research on Drug Control (\texteuro150,000). Co-PI with Camille Hemet and Arnaud Philippe on project `ECOSTUP: Trafic de stup\'efiants et conditions socio-\'economiques locales: une approche quantitative'
+  \item[2021] Economic Journal Referee Prize 2020 -- honoured to be recognized as one of the 14 referees ``who went beyond the call of duty during 2020''
+  \item[2019 -- 2024] Vidi Research Grant (\texteuro800,000) from The Netherlands Organization for Scientific Research (NWO) for the project ``The Non-Making of a Criminal: Crime Prevention over the Life-Cycle''
+  \item[2017] Recipient of the Erasmus School of Economics 2017 Top Talent Research Award (\texteuro5,000)
+  \item[2012 -- 2015] Veni Research Grant (\texteuro250,000) from The Netherlands Organization for Scientific Research (NWO) for the project ``Labour Market Opportunities and Criminal Participation''
+  \item[2013] Recipient of the Edmond Hustinx Prize for Science (\texteuro15,000), awarded to the most promising young scholar of the School of Business and Economics of Maastricht University in 2013
+  \item[2013] GSBE (\texteuro3,500) and SWOL (\texteuro2,000) grants to organize the 1st Maastricht Workshop on the Economics of Enforcement
+  \item[2012] Shortlisted for the Pierson Medaille 2012, awarded to a promising young economist working in the Netherlands -- did not win\ldots
+  \item[2010 -- 2012] Marie Curie Intra-European Fellowship Grant (\texteuro155,000) from the European Union Research Agency for the project ``Human Capital and Criminal Decision Making in Youths''
+  \item[2010 -- 2011] GSBE/METEOR Small-Scale Grant (\texteuro4,000)
+  \item[2005 -- 2009] Economic and Social Research Council (UK) PhD Scholarship
+  \item[2000 -- 2001] MSc Fee Waiver Grant, Economic History Department, LSE
+\end{datelist}
+
+% ============================================================
+\section{Teaching and Supervision}
+
+\subsection{Teaching (Past 5 Years)}
+\begin{datelist}
+  \item[2024 --] Economics of the Public Sector -- Lecturer and Coordinator (with Elisabeth Leduc), Seminar, 3rd Year Economics Bachelor, ESE
+  \item[2019 --] Labor Economics -- Lecturer (with Hans Bloemen and Stefan Hochguertel), 2nd Year Research Master, Tinbergen Institute
+  \item[2016 --] Labour Economics -- Lecturer and Coordinator (with Jan van Ours), 3rd Year Economics Bachelor, Erasmus School of Economics
+  \item[2018 -- 2023] Economic Research for Econometricians -- Lecturer and Coordinator (with Dana Sisak and Agnieszka Markiewicz), Minor, 3rd Year Economics Bachelor, Erasmus School of Economics
+  \item[2016 -- 2018] Macroeconomics -- Lecturer and Coordinator, 1st Year Economics and Econometrics Bachelor, Erasmus School of Economics
+  \item[2015 -- 2016] Labour Economics -- Coordinator and Lecturer, 2nd Year Economics Research Master and PhD Course, Maastricht University
+  \item[2015 -- 2016] European Labour Markets and the Welfare State -- Coordinator, 3rd Year Economics and Business Bachelor, Maastricht University
+\end{datelist}
+
+\subsection{Supervision}
+
+\textbf{Post-doctoral investigators:}
+\begin{pubs}
+  \item Dr Elisabeth Leduc (EC Marie Curie Grant, 2024--2026). Project: ``Institutional Discrimination in (Explicit) Action: How Policies Shape Inequalities''
+  \item Dr Zihan Ye (Chinese Scholarship Council Grant, 2022--2024). Project: ``Political and Economic Outcomes with the Modernization of Grassroots Governance in Rural China''
+  \item Dr Renske Stans (EC Marie Curie Grant, 2021--2023). Project: ``Where You Live Matters''
+\end{pubs}
+
+\textbf{PhD students at Erasmus University Rotterdam:}
+\begin{pubs}
+  \item Robin Verbeek (co-supervisor: Owen O'Donnell). Topic: ``The Role of Social Media Use on Mental Health''. Start: September 2024
+  \item Kyra Hanemaaijer (co-supervisor: Nadine Ketel). Topic: ``Widening the Divide: Barriers to Marginalized Groups in Education and Justice''. Defended: January 2025. Placement: University of Gothenburg, Sweden
+  \item Paul Bose (co-supervisor: Dana Sisak). Topic: ``From Preferences to Policy''. Defended: February 2025. Placement: Bocconi University, Italy
+  \item Marco Musumeci (co-supervisor: Anna Baiardi). Topic: ``Three Essays on the Economics of Science and the Economics of Education''. Defended: March 2025. Placement: University of Padova, Italy
+\end{pubs}
+
+\textbf{PhD students at Maastricht University:}
+\begin{pubs}
+  \item Jonas Wogh (co-supervisor: Prof Jaap Bos). Topic: ``Biases in Financial Access''. Start: September 2022
+  \item Alexandra de Gendre (co-supervisor: Prof Rolf van der Velden). Topic: ``Behavioral Barriers to Education''. Defended: March 2021. Placement: University of Melbourne, Australia
+\end{pubs}
+
+\textbf{Master and Bachelor theses:} 40--50 completed at Maastricht University and Erasmus University Rotterdam.
+
+% ============================================================
+\section{Publications, Research Papers, and Work in Progress}
+
+\subsection{Publications in Refereed Journals}
+\begin{pubs}
+  \item ``From Two Heads to One: Electoral and Governance Consequences of Political Recentralization'' (with Thomas Post, Zihan Ye, and Xiaopeng Zou), \emph{China Economic Review}, 2026, 101, 102770.\\
+  \url{https://doi.org/10.1016/j.chieco.2026.102770}
+  \item ``The Fast and The Studious? Ramadan Observance and Student Performance'' (with Kyra Hanemaaijer and Marco Musumeci), \emph{Journal of Population Economics}, forthcoming.
+  \item ``The Unequal Job Security Scars of Displacement'' (with Ana Figueiredo and Agnieszka Markiewicz), \emph{Journal of Public Economics}, 2026, 255, 105562.\\
+  \url{https://doi.org/10.1016/j.jpubeco.2025.105562}
+  \item ``Minority Salience and Criminal Justice Decisions'' (with Kyra Hanemaaijer and Nadine Ketel), \emph{American Economic Review: Insights}, 2026, 8(1), 90--108.\\
+  \url{https://doi.org/10.1257/aeri.20240638}
+  \item ``Religious Barriers to Birth Control Access'' (with Esm\'ee Zwiers), \emph{Review of Economics and Statistics}, forthcoming.\\
+  \url{https://doi.org/10.1162/rest.a.281}
+  \item ``Immigration and Crime: An International Perspective'' (with Paolo Pinotti), \emph{Journal of Economic Perspectives}, 2024, 38(1), 181--200.\\
+  \url{https://doi.org/10.1257/jep.38.1.181}
+  \item ``Risky Moms, Risky Kids? Fertility and Crime after the Fall of the Wall'' (with Arnaud Chevalier), \emph{Journal of Public Economics}, 2024, 230, 105048.\\
+  \url{https://doi.org/10.1016/j.jpubeco.2023.105048}
+  \item ``The Economic Benefits of Education for the Reduction of Crime'' (with Joel Carr and Sun\v{c}ica Vuji\'c), \emph{Oxford Research Encyclopedia of Economics and Finance}, 2023.\\
+  \url{https://doi.org/10.1093/acrefore/9780190625979.013.869}
+  \item ``Sick Leave Cuts and (Unhealthy) Returns to Work'' (with Judit Vall Castello), \emph{Journal of Labor Economics}, 2023, 41(4), 923--956.\\
+  \url{https://doi.org/10.1086/720629}
+  \item ``High Achievers? Cannabis Access and Academic Performance'' (with Ulf Z\"olitz), \emph{Review of Economic Studies}, 2017, 84(3), 1210--1237.\\
+  \url{https://doi.org/10.1093/restud/rdx020}
+  \item ``Economic Uncertainty, Parental Selection, and Children's Educational Outcomes'' (with Arnaud Chevalier), \emph{Journal of Political Economy}, 2017, 125(2), 393--430.\\
+  \url{https://doi.org/10.1086/690830}
+  \item ``Police and Thieves in the Stadium: Measuring the (Multiple) Effects of Football Matches on Crime'', \emph{Journal of the Royal Statistical Society: Series A}, 2016, 179(1), 273--292.\\
+  \url{https://doi.org/10.1111/rssa.12113}
+  \item ``Youth Crime and Education Expansion'' (with Stephen Machin and Sun\v{c}ica Vuji\'c), \emph{German Economic Review}, 2012, 13(4), 366--384.\\
+  \url{https://doi.org/10.1111/j.1468-0475.2012.00576.x}
+  \item ``Measuring the (Income) Effect of Disability Insurance Generosity on Labour Market Participation'' (with Judit Vall Castello), \emph{Journal of Public Economics}, 2012, 96(1--2), 198--210.\\
+  \url{https://doi.org/10.1016/j.jpubeco.2011.10.004}
+  \item ``Crime and Police Resources: The Street Crime Initiative'' (with Stephen Machin), \emph{Journal of the European Economic Association}, 2011, 9(4), 678--701.\\
+  \url{https://doi.org/10.1111/j.1542-4774.2011.01018.x}
+  \item ``The Crime Reducing Effect of Education'' (with Stephen Machin and Sun\v{c}ica Vuji\'c), \emph{The Economic Journal}, 2011, 121(552), 463--484.\\
+  \url{https://doi.org/10.1111/j.1468-0297.2011.02430.x}
+  \item ``Crime and Benefit Sanctions'' (with Stephen Machin), \emph{Portuguese Economic Journal}, 2006, 5(2), 149--165.\\
+  \url{https://doi.org/10.1007/s10258-006-0010-9}
+\end{pubs}
+
+\subsection{Working Papers}
+\begin{pubs}
+  \item ``Less School (Costs), More (Female) Education? Lessons from Egypt Reducing Years of Compulsory Schooling'' (with Ahmed Elsayed, AUC). R\&R at the \emph{Journal of Human Resources}.\\
+  \url{https://www.iza.org/publications/dp/13402}
+  \item ``Tax-Induced Emigration: Who Flees High Taxes? Evidence from the Netherlands'' (with Jos\'e Victor C. Giarola, Frank C\"orvers, and Hans Schmeets, all UM). CESifo Working Paper, 2026. Under review.\\
+  \url{https://www.ifo.de/en/cesifo/publications/2026/working-paper/tax-induced-emigration-who-flees-high-taxes-evidence-netherlands}
+  \item ``Deliver Us from Crime? Gig Jobs, Labor Market Opportunities and Offending'' (with Hugo Allouard, ESSEC; Grazia Cecere, Mines Telecom; Jos\'e de Sousa, Assas; and In\`es Picard, CREST). CEPR Discussion Paper 21089.\\
+  \url{https://cepr.org/publications/dp21089}
+\end{pubs}
+
+\subsection{Selected Work in Progress}
+\begin{pubs}
+  \item ``The Mental Health Costs of Cheap Data: Evidence from Around the World'' (with Robin Verbeek, EUR)
+  \item ``Risky Peers and Crime'' (with Sebastian Garcia-Torres and Max Steinhardt)
+  \item ``Ethnic Interactions in the Dutch Housing Market'' (with Jaap Bos and Jonas Wogh, UM)
+  \item ``From Tweets to Ballots: Refugee Inflows and Natives' Reactions'' (with Paul Bose, Tor Vergata, and Renske Stans, Netherlands Court of Audit)
+  \item ``Poor Rich Women: Losing Childcare Subsidies and Female Labour Market Outcomes'' (with Gabriele Mari, EUR)
+  \item ``Immigration, Crime, and Prison: A Reconciliation?'' (with Paolo Pinotti, Bocconi, and Tommaso Tulkens, EUR)
+  \item ``Early Release from Prison on Electronic Monitoring and Recidivism: A Tale of Two Discontinuities''
+\end{pubs}
+
+\subsection{Contributions to Books}
+\begin{pubs}
+  \item ``Education and Crime: What We Know and Where Do We Go?'' (with Joel Carr and Sun\v{c}ica Vuji\'c, University of Antwerp), in \emph{A Modern Guide to the Economics of Crime}, P. Buonanno, J. Vargas, and P. Vanin (eds.), Edward Elgar Publishing, 2022.\\
+  \url{https://doi.org/10.4337/9781789909333.00011}
+  \item \emph{Lessons from the Economics of Crime: What Reduces Offending?}, co-editor (with Philip J. Cook, Stephen Machin, and Giovanni Mastrobuoni), MIT Press, October 2013.\\
+  \url{https://mitpress.mit.edu/9780262019613/lessons-from-the-economics-of-crime/}
+  \item ``The Relationship between School Performance, Delinquency, and Early School Leaving'' (with Tanja Traag and Rolf van der Velden), in \emph{Criminal Behaviour from School to the Workplace}, F. Weerman and C.C.J.H. Bijleveld (eds.), NSCR/Routledge, December 2013.\\
+  \url{https://www.taylorfrancis.com/chapters/edit/10.4324/9780203670446-3/}
+\end{pubs}
+
+% ============================================================
+\section{Presentations, Refereeing, and Other Research Activities}
+
+\subsection{Selected Talks (Past 2 Years \& Scheduled)}
+\begin{datelist}
+  \item[2026] Seminar, The Rockwool Foundation, Copenhagen (Nov); Seminar, University of Alicante (Oct); 17th Transatlantic Workshop on the Economics of Crime, Cornell (Oct)
+  \item[2025] Econ Seminar, Tor Vergata (Nov); Econ \& Law Seminar, Roma 2 (Nov); Econ Seminar, Collegio Carlo Alberto (Oct); 15th FRDB Conference, EUI (Sept); 3rd BLOW, Badolato (July); EALE-SOLE, Toronto (June); Keynote at 9th Workshop on Economics of Organized Crime, Edinburgh (June); ESPE, Napoli (June); Chicago-LSE Crime Workshop, Friedman Institute (May); Econ Seminar, ULB (April); CLEAN Seminar, Bocconi (March)
+  \item[2024] Econ Seminar, Groningen (Oct); NBER Summer Institute (July); IEB Workshop on Public Economics, University of Barcelona (June); University of Siena (June); University of Liverpool (May); University of Cagliari (May); Maastricht L\&W Seminar (April); JFK Institute, Berlin (April); Taxation-Migration Workshop, LSE (March); EU Tax Observatory, PSE (March)
+\end{datelist}
+
+\subsection{Refereeing Activity (selected)}
+American Economic Review, American Economic Journal: Applied Economics, Economica, Economic Policy, Empirical Economics, German Economic Review, Journal of Applied Econometrics, Journal of Economic Behavior and Organization, Journal of Economic Geography, Journal of Labor Economics, Journal of Political Economy, Journal of Population Economics, Journal of Public Economics, Journal of Quantitative Criminology, Journal of the European Economic Association, JRSS: Series A, Labour Economics, Quarterly Journal of Economics, Review of Economic Studies, The Economic Journal.
+
+\subsection{Organization of Workshops and Seminars}
+\begin{pubs}
+  \item Local organizer team of the European Society of Population Economics conference in Rotterdam in 2024: \url{https://esperotterdam2024.com/}
+  \item Co-organiser of the TI Research on Monday (ROM) seminar at ESE, the main seminar of the Economics Department at Erasmus University Rotterdam
+  \item Co-organizer of the Transatlantic Workshop on the Economics of Crime (TWEC): \url{https://sites.google.com/site/oliviermarie/twec}
+  \item Co-organiser (September 2010 -- June 2016) of the GSBE weekly seminar on the Development and Utilisation of Human Resources (DUHR) at Maastricht University
+  \item Co-organiser of the CESifo Summer Institute ``Lessons from the Economics of Crime: What Works in Reducing Offending'', Venice, July 2011
+\end{pubs}
+
+\end{document}
