@@ -28,20 +28,11 @@
   <a class="btn secondary" href="files/CV_Olivier_Marie.pdf" download>Download</a>
 </p>
 
-<div id="pdf-holder">
-<object class="pdf-frame" data="files/CV_Olivier_Marie.pdf#view=FitH" type="application/pdf">
-  <p>Your browser cannot display the PDF inline.
-  <a href="files/CV_Olivier_Marie.pdf" target="_blank">Open the CV in a new tab</a>.</p>
-</object>
+<div class="pdf-view" data-pdf="files/CV_Olivier_Marie.pdf" data-height="820">
+  <p class="pdf-fallback"><a href="files/CV_Olivier_Marie.pdf" target="_blank">Open the CV (PDF)</a></p>
 </div>
-<script>
-// Inside a sandboxed iframe (Google Sites) the native PDF viewer is blocked, so use the Google Docs viewer instead.
-if (window.self !== window.top) {
-  var pdf = 'https://oliviermarie-econ.github.io/academic_website/files/CV_Olivier_Marie.pdf';
-  document.getElementById('pdf-holder').innerHTML =
-    '<iframe class="pdf-frame" style="height:820px" src="https://docs.google.com/viewer?url=' + encodeURIComponent(pdf) + '&embedded=true" title="CV"></iframe>';
-}
-</script>
+<script src="files/pdfjs/pdf.min.js"></script>
+<script src="pdfview.js"></script>
 
 </div><!-- .page -->
 <footer class="site-footer">

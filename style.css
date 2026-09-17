@@ -360,3 +360,21 @@ h2.plain {
   border: 1px solid var(--border);
 }
 @media (max-width: 520px) { .portrait { float: none; display: block; margin: 0 0 16px; } }
+
+/* in-page PDF viewer (pdfview.js) */
+.pdf-view {
+  width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  border: 1px solid var(--border);
+  border-radius: 2px;
+  background: #e9e9e9;
+  padding: 8px 0;
+}
+.pdf-view canvas.pdf-page {
+  display: block;
+  margin: 0 auto 10px;
+  background: #fff;
+  box-shadow: 0 1px 4px rgba(0,0,0,.18);
+}
+.pdf-loading, .pdf-fallback { text-align: center; padding: 30px 10px; color: var(--mid); font-size: 13.5px; }
